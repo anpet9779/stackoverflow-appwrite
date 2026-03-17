@@ -5,3 +5,5 @@ const env = {
     key: String(process.env.NEXT_PUBLIC_APPWRITE_KEY),
   },
 };
+
+export default env;
