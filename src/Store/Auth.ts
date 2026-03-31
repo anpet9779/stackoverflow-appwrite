@@ -48,6 +48,7 @@ export const useAuthStore = create<IAuthStore>()(
           const session = await account.getSession("current");
           set({ session });
         } catch (error) {
+          console.error(error);
           set({ session: null });
         }
       },
